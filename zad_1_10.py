@@ -26,22 +26,21 @@ else:
             pozycja_gracza += "w lewym dolnym rogu."
         elif 10 < x < 90:
             pozycja_gracza += "w dolnym boku."
-        elif 90 <= x <= 100:
+        else:
             pozycja_gracza += "w prawym dolnym rogu."
     elif 10 < y < 90:
         if 0 <= x <= 10:
             pozycja_gracza += "w lewym boku."
         elif 10 < x < 90:
             pozycja_gracza += "w srodku."
-        elif 90 <= x <= 100:
+        else:
             pozycja_gracza += "w prawym boku."
     elif 90 <= y <= 100:
         if 0 <= x <= 10:
             pozycja_gracza += "w lewym gornym rogu."
         elif 10 < x < 90:
             pozycja_gracza += "w gornym boku."
-        elif 90 <= x <= 100:
+        else:
             pozycja_gracza += "w prawym gornym rogu."
-
 
 print(pozycja_gracza)
