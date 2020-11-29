@@ -34,3 +34,5 @@ if warunek == True:
     print(f'Pole trojkata to: {pole_trojkata:.2f}.')
 else:
     print(f'Liczby: {a}, {b}, {c} nie moga stanowic bokow trojkata.')
+# Z drobiazgów - w 1.5 zamiast zagnieżdżać warunki możesz je połączyć używając and
+#TODO
