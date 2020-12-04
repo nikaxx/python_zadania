@@ -20,12 +20,12 @@ liczba_rzedow = 1 #a1
 r = 2
 a1 = 1
 kursor = - wysokosc_choinki + 1
-max_znakow = a1 + (wysokosc_choinki - 1) * r #an
+szerokosc_choinki = a1 + (wysokosc_choinki - 1) * r #an
 temp3 = wysokosc_choinki
 while liczba_rzedow <= wysokosc_choinki:
     liczba_znakow = a1 + (liczba_rzedow - 1) * r
     temp = kursor
-    temp2 = max_znakow
+    temp2 = szerokosc_choinki
     while temp2 > 0:
         znak = '*'
         spacja = ' '
