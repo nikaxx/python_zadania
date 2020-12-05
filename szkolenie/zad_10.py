@@ -22,3 +22,7 @@ for liczba in a:
         temp = 'x' * liczba
         b.append(temp)
 print(b)
+# [x for x in lista]
+#x for x in a if x > 50
+c = [min(x, 10) * 'x' for x in a if x % 2 == 0]
+print(c)
