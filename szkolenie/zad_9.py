@@ -10,5 +10,4 @@ b = []
 for liczba in a:
     if liczba > 50:
         b.append(liczba)
-
 print(b)
