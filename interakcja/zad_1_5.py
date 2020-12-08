@@ -22,17 +22,13 @@ a = float(input("Podaj pierwsza liczbe: "))
 b = float(input("Podaj druga liczbe: "))
 c = float(input("Podaj trzecia liczbe: "))
 warunek = False
-if a + b > c:
-    if b + c > a:
-        if a + c > b:
-            warunek = True
+if a + b > c and b + c > a and a + c > b:
+    warunek = True
 
-p = (a + b + c) / 2 # polowa_obwodu_trojkata
-pole_trojkata = math.sqrt(p * (p - a) * (p - b) * (p - c))
 if warunek == True:
+    p = (a + b + c) / 2  # polowa_obwodu_trojkata
+    pole_trojkata = math.sqrt(p * (p - a) * (p - b) * (p - c))
     print(f'Liczby: {a}, {b}, {c} moga stanowic boki trojkata.')
     print(f'Pole trojkata to: {pole_trojkata:.2f}.')
 else:
     print(f'Liczby: {a}, {b}, {c} nie moga stanowic bokow trojkata.')
-# Z drobiazgów - w 1.5 zamiast zagnieżdżać warunki możesz je połączyć używając and
-#TODO
